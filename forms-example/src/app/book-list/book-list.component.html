@@ -1,0 +1,41 @@
+<div>
+
+  Lista de Libros
+
+  <!-- <ol>
+
+    <li *ngFor="let item of arrBooks" (click)="showBook(item)">
+      {{item.title}} / {{item.author}}
+    </li>
+
+  </ol>
+
+  <app-book-item
+   *ngFor="let item of arrBooks"
+   [bookModel]="item" 
+   (click)="showBook(item)">
+  </app-book-item> -->
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of arrBooks">
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.author}}</td>
+        <td><button routerLink="/detail/{{item.id}}">Editar</button></td>
+        <td><button (click)="delete(item)">Eliminar</button></td>
+      </tr>
+    </tbody>
+
+  </table>
+
+</div>

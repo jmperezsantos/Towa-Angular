@@ -1,0 +1,11 @@
+<div>
+
+  <img src="https://lorempizza.com/100/100" />
+  <div>
+    <p> {{pelicula.title}} </p>
+    <p> {{pelicula.description}} </p>
+  </div>
+  <img src="assets/delete.png" (click)="deleteMovie()" width="50px">
+  <img src="assets/edit.png" routerLink="/editMovie/{{pelicula.identifier}}" width="50px">
+
+</div>

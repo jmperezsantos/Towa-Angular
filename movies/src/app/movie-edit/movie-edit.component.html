@@ -1,0 +1,13 @@
+<div>
+
+  <h1>Actualizar Película</h1>
+
+  <input [(ngModel)]="movie.identifier" disabled>
+
+  <input [(ngModel)]="movie.title">
+
+  <textarea [(ngModel)]="movie.description"></textarea>
+
+  <button (click)="updateMovie()">Guardar!</button>
+  
+</div>

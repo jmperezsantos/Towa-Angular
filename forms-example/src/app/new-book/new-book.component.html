@@ -1,0 +1,16 @@
+<div>
+
+  Título del libro:
+  <input type="text" [(ngModel)]="newBook.title">
+
+  <br> 
+  
+  Autor del libro:
+  <input type="text" [(ngModel)]="newBook.author">
+
+  <br>
+
+  <button (click)="saveBook()">Guardar!</button>
+  <button (click)="cancel()">Cancelar!</button>
+
+</div>
